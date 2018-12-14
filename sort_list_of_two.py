@@ -1,21 +1,22 @@
 
-def first_function(x):
+def sort_values(x):
     if type(x) is list:
         if len(x) == 2:
             if x[0] > x[1]:
                 x =  x[::-1]
                 print("Number sorted")
-            elif x[0] < x[1]
+            elif x[0] < x[1]:
+                print("Numbers already in order")
             else:
                 print("Numbers are equal")
         else:
-            print("Length should be equal to 2")
+            print("Length not 2")
     else:
-        print("Please give me a list")
+        print("Not a list")
+    print(x)
     return x
 
-
-def second_function(x):
+def product_array(x):
     if type(x) is list:
         if len(x) > 1:
             length = len(x)
@@ -24,8 +25,9 @@ def second_function(x):
                 for j in range(length):
                     matrix[i][j] = x[i] * x[j]
         else:
-            print("Not a long list")
+            print("List not long enough")
     else:
-        print("Not even a list")
-    
+        print("Not a list")
+        
+    #print(matrix)
     return matrix
